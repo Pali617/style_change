@@ -4,7 +4,15 @@
     <head>
         <meta charset="UTF-8">
         <title>Éjszakai Weblap</title>
-        <link rel="stylesheet" href="dark.css">
+        <?php
+            if(isset($_GET["style"]) and $_GET["style"] == "dark"){
+            echo "<link rel='stylesheet' href='dark.css'>";
+            }
+            
+            if(isset($_GET["style"]) and $_GET["style"] == "light"){
+            echo "<link rel='stylesheet' href='light.css'>";
+            }
+        ?>
     </head>
     <body>
         <p>fejlesztés alatt</p>
@@ -15,8 +23,7 @@
         Sed bibendum eleifend sem, ac laoreet odio congue at. Nulla nunc nisi, mollis non varius nec, vehicula ac lorem. Suspendisse convallis lorem
         eu arcu pellentesque lacinia in vitae turpis. Quisque fermentum semper ex id euismod. Aliquam posuere semper pharetra. Vivamus ex nibh, blandit non urna non, tempor vehicula massa. Mauris vel velit nec arcu gravida cursus.
         Curabitur consectetur eget justo vel tristique. Nulla eu ornare erat. Cras lectus enim, mollis vitae metus vel, sollicitudin volutpat turpis. </p>
-        <?php
-        
-        ?>
+        <a href="?stlye=light">Nappali</a>
+        <a href="?style=dark">Éjszakai</a>
     </body>
 </html>
