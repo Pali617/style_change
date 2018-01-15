@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Éjszakai Weblap</title>
-        <link rel="stylesheet" href="light.css">
+        <link rel="stylesheet" href="dark.css">
     </head>
     <body>
         <p>fejlesztés alatt</p>
